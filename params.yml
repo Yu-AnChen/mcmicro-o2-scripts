@@ -1,0 +1,16 @@
+workflow:
+  start-at: segmentation
+  stop-at: quantification
+  segmentation-channel: 11 11
+
+options:
+  ashlar: -m 30 --filter-sigma 1
+  s3seg: --maxima-footprint-size 7 --area-max 50000 --expand-size 3 --pixelSize 0.65 --mean-intensity-min 128
+  unmicst: --tool unmicst-duo
+  mcquant: --masks cellRing.ome.tif cytoRing.ome.tif nucleiRing.ome.tif
+
+modules:
+  watershed:
+    name: s3seg
+    container: labsyspharm/s3segmenter
+    version: 1.5.1-large

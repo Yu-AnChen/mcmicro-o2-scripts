@@ -1,0 +1,40 @@
+2023-01-21 00:15:37,232 675        [      main] INFO          ome.formats.importer.ImportConfig - OMERO.blitz Version: 5.5.6
+2023-01-21 00:15:37,252 695        [      main] INFO          ome.formats.importer.ImportConfig - Bioformats version: 6.4.0-235 revision: 8aa54d9f7944be34ac437641bcc00be7fa044589 date: 8 April 2020
+2023-01-21 00:15:37,379 822        [      main] INFO   formats.importer.cli.CommandLineImporter - Setting checksum algorithm to File-Size-64
+2023-01-21 00:15:37,381 824        [      main] INFO   formats.importer.cli.CommandLineImporter - Skipping minimum/maximum computation
+2023-01-21 00:15:37,382 825        [      main] INFO   formats.importer.cli.CommandLineImporter - Disabling upgrade check
+2023-01-21 00:15:37,382 825        [      main] INFO   formats.importer.cli.CommandLineImporter - Adding exclusion: clientpath
+2023-01-21 00:15:37,389 832        [      main] INFO   formats.importer.cli.CommandLineImporter - Log levels -- Bio-Formats: ERROR OMERO.importer: INFO
+2023-01-21 00:15:37,997 1440       [      main] INFO      ome.formats.importer.ImportCandidates - Depth: 4 Metadata Level: MINIMUM
+2023-01-21 00:15:39,169 2612       [      main] INFO      ome.formats.importer.ImportCandidates - 1 file(s) parsed into 1 group(s) with 1 call(s) to setId in 1159ms. (1172ms total) [0 unknowns]
+2023-01-21 00:15:39,315 2758       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Attempting initial SSL connection to idp.tissue-atlas.org:4064
+2023-01-21 00:15:41,151 4594       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Insecure connection requested, falling back
+2023-01-21 00:15:42,061 5504       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Pinging session every 300s.
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Server: 5.6.3
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Client: 5.5.6
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - Java Version: 1.8.0_112
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Name: Linux
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Arch: amd64
+2023-01-21 00:15:42,107 5550       [      main] INFO       ome.formats.OMEROMetadataStoreClient - OS Version: 3.10.0-1160.81.1.el7.x86_64
+2023-01-21 00:15:43,407 6850       [      main] INFO          ome.formats.importer.ImportConfig - Using import target: Dataset:1484
+2023-01-21 00:15:43,501 6944       [2-thread-1] INFO         ome.formats.importer.ImportLibrary - Import target specifies container: Dataset:1484
+2023-01-21 00:15:43,760 7203       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_PREPARATION
+2023-01-21 00:15:44,185 7628       [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_START
+2023-01-21 00:15:44,232 7675       [3-thread-1] INFO   ts.importer.transfers.UploadFileTransfer - Transferring /n/scratch3/users/y/yc00/236-CHUV_test1-2022DEC/mcmicro/LSP10830/registration/LSP10830.ome.tif...
+2023-01-21 00:15:44,277 7720       [3-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILE_UPLOAD_STARTED: /n/scratch3/users/y/yc00/236-CHUV_test1-2022DEC/mcmicro/LSP10830/registration/LSP10830.ome.tif
+2023-01-21 08:17:06,278 28889721   [3-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILE_UPLOAD_COMPLETE: /n/scratch3/users/y/yc00/236-CHUV_test1-2022DEC/mcmicro/LSP10830/registration/LSP10830.ome.tif
+2023-01-21 08:17:06,419 28889862   [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - FILESET_UPLOAD_END
+2023-01-21 08:17:06,658 28890101   [2-thread-1] INFO   ormats.importer.cli.LoggingImportMonitor - IMPORT_STARTED Logfile: 37912
+2023-01-21 08:17:07,989 28891432   [l.Client-2] INFO   ormats.importer.cli.LoggingImportMonitor - METADATA_IMPORTED Step: 1 of 5  Logfile: 37912
+2023-01-21 08:17:08,259 28891702   [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - PIXELDATA_PROCESSED Step: 2 of 5  Logfile: 37912
+2023-01-21 08:17:08,735 28892178   [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - THUMBNAILS_GENERATED Step: 3 of 5  Logfile: 37912
+2023-01-21 08:17:08,762 28892205   [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - METADATA_PROCESSED Step: 4 of 5  Logfile: 37912
+2023-01-21 08:17:08,787 28892230   [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - OBJECTS_RETURNED Step: 5 of 5  Logfile: 37912
+2023-01-21 08:17:09,030 28892473   [l.Client-1] INFO   ormats.importer.cli.LoggingImportMonitor - IMPORT_DONE Imported file: /n/scratch3/users/y/yc00/236-CHUV_test1-2022DEC/mcmicro/LSP10830/registration/LSP10830.ome.tif
+Image:6054
+Other imported objects:
+Fileset:5500
+
+==> Summary
+1 file uploaded, 1 fileset created, 1 image imported, 0 errors in 8:01:26.693
+Using session for yu-an.chen@idp.tissue-atlas.org:4064. Idle timeout: 100 min. Expires in : 1440 min. Current group: Gray Data Portal
