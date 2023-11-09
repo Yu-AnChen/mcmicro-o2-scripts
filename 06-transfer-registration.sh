@@ -10,12 +10,13 @@
 # \\files.med.harvard.edu\ImStor\sorger\data\RareCyte\JL503_JERRY\236-CHUV_test1-2022DEC\ 
 # cat mosaics.csv | xargs -I {} sbatch /home/yc00/project/20230119-236-CHUV_test1-2022DEC/06-transfer-registration.sh {}
 
+# NOTE: does not handle space in path!
 DEST='/n/files/ImStor/sorger/data/RareCyte/JL503_JERRY/236-CHUV_test1-2022DEC/mcmicro'
 SAMPLEDIR=$1
 SAMPLEID=$(basename $SAMPLEDIR)
 
 ssh transfer "mkdir -p '$DEST'"
 rsync -ahv \
-        "'$SAMPLEDIR/'" \
-        "'transfer:$DEST/$SAMPLEID/'" \
+        "$SAMPLEDIR/" \
+        "transfer:$DEST/$SAMPLEID/" \
         --exclude "raw/" --exclude ".nextflow/" --include "*/" --include "*" --exclude "*"
